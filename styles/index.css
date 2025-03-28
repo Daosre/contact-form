@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  background-color: var(--green-200);
+  padding: 20px;
+}
+main {
+  background-color: var(--white);
+  color: var(--grey-900);
+  border-radius: 20px;
+}
+form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: none;
+  input {
+    padding: 15px;
+    border: 0.5px solid;
+    border-radius: 5px;
+  }
+  .General,
+  .Support {
+    display: flex;
+    gap: 10px;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 0.5px;
+  }
+  #message {
+    height: 250px;
+  }
+}
+.firstName,
+.lastName,
+.email-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+h1 {
+  color: var(--green-900);
+}
+
+span {
+  color: var(--green-600);
+}
+.checkbox-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  #checkbox {
+    line-height: 22px;
+  }
+}
+button {
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  color: var(--white);
+  background-color: var(--green-600);
+}

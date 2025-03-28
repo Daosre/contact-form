@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/desktop.css" />
+    <link rel="stylesheet" href="./styles/font-family.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <main class="Karla400">
+      <form method="post">
+        <h1 class="Karla700">Contact Us</h1>
+        <fieldset class="firstName-container">
+          <div class="firstName">
+            <label for="firstName" aria-required="true"
+              >First Name <span>*</span></label
+            >
+            <input type="text" name="firstName" required />
+          </div>
+          <div class="lastName">
+            <label for="lastName" aria-required="true"
+              >Last Name <span>*</span></label
+            >
+            <input type="text" name="lastName" required />
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="email-container">
+            <label for="email" aria-errormessage="empty">Email Address</label>
+            <input type="text" name="email" required />
+          </div>
+        </fieldset>
+        <fieldset class="query-container">
+          <label for="Query">Query Type <span>*</span></label>
+          <div class="radio-container">
+            <div class="General">
+              <input
+                type="radio"
+                id="General"
+                name="query"
+                value="General Enquiry"
+              />
+              <label for="General">General Enquiry</label>
+            </div>
+            <div class="Support">
+              <input
+                type="radio"
+                id="Support"
+                name="query"
+                value="Support Request"
+              />
+              <label for="Support">Support Request</label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <label for="message">Message <span>*</span></label>
+          <input type="text" name="message" id="message" required />
+        </fieldset>
+        <fieldset>
+          <div class="checkbox-container">
+            <input type="checkbox" />
+            <label for="checkbox" id="checkbox"
+              >I consent to being contacted by the team <span>*</span></label
+            >
+          </div>
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
